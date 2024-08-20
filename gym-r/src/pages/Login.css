@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ion-button {
+  --color: rgb(255, 255, 255);
+  --background: rgb(39, 120, 167);
+  height: auto;
+  width: 100%;
+}
+
+.center-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.input-field {
+  margin-left: 10px; /* Ajusta este valor según sea necesario */
+  width: calc(100% - 20px); /* Ajusta este valor según sea necesario */
+  max-width: 400px; /* Opcional: para limitar el ancho máximo */
+}
+
+.login-button {
+  width: 100%;
+  margin-top: 10px; /* Espacio entre la contraseña y el botón de inicio de sesión */
+}
+
+.create-account {
+  margin-top: 15px; /* Espacio entre el botón de inicio de sesión y el enlace de crear cuenta */
+  text-align: center;
+}

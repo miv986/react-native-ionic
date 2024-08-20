@@ -1,0 +1,11 @@
+ion-note {
+  display: block;
+}
+
+.closeSesionBottonDiv {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 16px;
+}

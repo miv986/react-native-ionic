@@ -1,0 +1,9 @@
+.trainingListsDiv {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.trainingListsDiv ion-item-sliding:not(:last-child) {
+  margin-bottom: 10px; /* Espacio entre los elementos */
+}
