@@ -1,0 +1,9 @@
+.gym-item-image {
+  display: block;
+  /* Ejemplo de estilos que podrías aplicar */
+  width: 100px; /* Ancho de la imagen */
+  height: 100px; /* Alto de la imagen */
+  object-fit: cover; /* Para que la imagen se ajuste correctamente */
+  border-radius: 10px; /* Bordes redondeados */
+  margin-right: 10px; /* Espacio a la derecha de la imagen */
+}

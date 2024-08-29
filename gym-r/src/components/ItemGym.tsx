@@ -1,6 +1,6 @@
 import { IonImg, IonItem, IonLabel } from "@ionic/react";
 import "./ExploreContainer.css";
-
+import "./ItemGym.css";
 interface GymItemProps {
   imagen: string;
   texto: string;
@@ -10,7 +10,7 @@ interface GymItemProps {
 const GymItem: React.FC<GymItemProps> = (props: GymItemProps) => {
   return (
     <IonItem routerLink={props.ruta}>
-      <IonImg className="imagen" src={props.imagen} />
+      <IonImg className="gym-item-image" src={props.imagen} />
       <IonLabel>{props.texto}</IonLabel>
     </IonItem>
   );

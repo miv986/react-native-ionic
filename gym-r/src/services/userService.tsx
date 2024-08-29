@@ -9,7 +9,7 @@ export const registerUser = async (
   usuario: string
 ) => {
   try {
-    const response = await api.post("/usuarios/register", {
+    const response = await api.post("/usuarios/registro", {
       email: email,
       password: password,
       usuario: usuario,
@@ -36,7 +36,7 @@ export const loginUser = async (email: string, password: string) => {
       email: email,
       password: password,
     });
-
+    console.log(response.data);
     return response.data; // Devuelve los datos de la respuesta
   } catch (error) {
     // Manejo de errores

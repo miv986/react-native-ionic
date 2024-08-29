@@ -50,7 +50,13 @@ export function Login() {
 
     try {
       const userData = await loginUser(email, password);
+
+      if (userData && typeof userData === "object") {
+        console.log("USer data: " + userData);
+      }
       //guardar el token en el localStorage
+      localStorage.setItem("user", JSON.stringify(userData));
+
       present({
         message: "Login existoso. Bienvenido/a " + userData.usuario,
         duration: 3000,

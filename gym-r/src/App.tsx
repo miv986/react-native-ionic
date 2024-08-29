@@ -38,6 +38,7 @@ import { MuscleGroups } from "./pages/MuscleGroups";
 import { AccountDetails } from "./pages/AccountDetails";
 import { TrainingLists } from "./pages/TrainingLists";
 import { ExerciseList } from "./pages/ExerciseList";
+import TrainingListDetail from "./pages/TrainingListDetail";
 setupIonicReact();
 
 const App: React.FC = () => (
@@ -55,9 +56,15 @@ const App: React.FC = () => (
         </Route>
         <Route
           exact
+          path="/traininglists/:index"
+          component={TrainingListDetail}
+        ></Route>
+        <Route
+          exact
           path="/exerciselist/:grupoMuscular"
           component={ExerciseList}
         ></Route>
+
         <Route exact path="/exercise/:exerciseId">
           <ExerciseDetails />
         </Route>
